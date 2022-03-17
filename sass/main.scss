@@ -1,13 +1,14 @@
-@import "./Vendors/normalized";
+@import "./vendors/normalized";
 
 @import "./utils/variables";
-@import "./Utils/typography";
+@import "./utils/typography";
 
 @import "./base/reset";
 @import "./base/base";
 
-@import "./Components/button";
+@import "./components/button";
 
-@import "./Layout/card";
+@import "./layout/card";
+@import "./layout/header";
 
-@import "./Pages/home";
+@import "./pages/home";

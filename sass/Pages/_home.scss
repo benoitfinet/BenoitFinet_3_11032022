@@ -1,0 +1,44 @@
+.loc-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    &__icon {
+        position: absolute;
+        left: 26%;
+    }
+    &__text {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+.desc-home {
+    background-color: rgb(245, 245, 245);
+    padding: 40px 40px;
+    text-align: center;
+    &__title {
+        padding: 0 10px;
+    }
+}
+
+.steps-home {
+    padding: 40px 15px;
+    &__title {
+        padding-bottom: 20px;
+    }
+}
+
+.restaurants-home {
+    padding: 40px 15px;
+    background-color: rgb(245, 245, 245);
+    &__title {
+        padding-bottom: 15px;
+    }
+}
+
+.card-list {
+    display: flex;
+    flex-flow: wrap column;
+}

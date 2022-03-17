@@ -1,12 +1,50 @@
 .card {
-    &__header {
-        .card-title {
-            font-size: 24px;
-
-            @media screen and (min-width : $breakpoint-mobile) {
-                font-size: 20px;
-            }
-        }
+    width: 100%;
+    background-color: white;
+    border-radius: 20px 20px;
+    margin: 15px auto;
+    box-shadow: 0px 1px 10px rgb(224, 224, 224);
+    text-decoration: none;
+    color: black;
+    &__top{
+        height: 180px;
+        border-radius: 20px 20px 0px 0px;
+        position: relative;
+        overflow: hidden;
     }
-
+    &__img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__tag{
+        position: absolute;
+        top: 7%;
+        right: 5%;
+        background-color: $colour-tertiary;
+        width: 20%;
+        padding: 2%;
+        font-weight: 700;
+        color: #189276;
+    }
+    &__bottom{
+        position: relative;
+        padding: 15px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    &__where {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    &__icon{
+        position: absolute;
+        right: 10%;
+        bottom: 50%;
+    }
 }

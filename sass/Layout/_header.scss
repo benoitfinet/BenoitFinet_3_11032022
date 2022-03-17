@@ -1,0 +1,9 @@
+.header-home {
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0px 12px 0px;
+    box-shadow: 0 4px 4px grey;
+    &__img {
+        width: 45%;
+    }
+}
