@@ -1,0 +1,12 @@
+.card {
+    &__header {
+        .card-title {
+            font-size: 24px;
+
+            @media screen and (min-width : $breakpoint-mobile) {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
