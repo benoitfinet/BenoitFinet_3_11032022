@@ -1,0 +1,23 @@
+.page-footer {
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    padding: 20px 10px;
+    &__img{
+        font-family: $font-secondary;
+        padding: 10px 0;
+        font-weight: 500;
+    }
+}
+
+.footer-list {
+    list-style-type: none;
+    &__item {
+        padding: 5px 0px;
+    }
+    &__icon1 {
+        padding-right: 12px;
+    }
+    &__icon2 {
+        padding-right: 8px;
+    }
+}

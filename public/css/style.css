@@ -178,11 +178,170 @@ template {
   display: none;
 }
 
-/* H1, P, ancres, etc... */
+body {
+  font-family: "roboto";
+}
+
+h1, h2 {
+  font-weight: 800;
+  font-size: 23px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.desc-home__button {
+  background: #9356dc;
+  background: linear-gradient(352deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 40px;
+  color: #eeeeee;
+  text-align: center;
+  border: 4px #9356DC;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttons-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fcfcfc;
+  box-shadow: 0px 5px 5px #e0e0e0;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 35px;
+}
+.buttons-steps__step {
+  position: absolute;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 45px;
+  left: -10px;
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons-steps__icon {
+  position: absolute;
+  left: 30px;
+  color: #999;
+}
+.buttons-steps__text {
+  position: absolute;
+  left: 70px;
+  font-weight: 700;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px 20px;
+  margin: 15px auto;
+  box-shadow: 0px 1px 10px #e0e0e0;
+  text-decoration: none;
+  color: black;
+}
+.card__top {
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.card__img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__tag {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  background-color: #99E2D0;
+  width: 20%;
+  padding: 2%;
+  font-weight: 700;
+  color: #189276;
+}
+.card__bottom {
+  position: relative;
+  padding: 15px;
+}
+.card__title {
+  font-weight: 900;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.card__where {
+  font-weight: 400;
+  font-size: 16px;
+}
+.card__icon {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+}
+
 .header-home {
   text-align: center;
   justify-content: center;
+  padding: 20px 0px 12px 0px;
+  box-shadow: 0 4px 4px grey;
 }
 .header-home__img {
-  width: 43%;
+  width: 45%;
+}
+
+.loc-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #e9e9e9;
+}
+.loc-home__icon {
+  position: absolute;
+  left: 26%;
+}
+.loc-home__text {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.desc-home {
+  background-color: whitesmoke;
+  padding: 40px 40px;
+  text-align: center;
+}
+.desc-home__title {
+  padding: 0 10px;
+}
+
+.steps-home {
+  padding: 40px 15px;
+}
+.steps-home__title {
+  padding-bottom: 20px;
+}
+
+.restaurants-home {
+  padding: 40px 15px;
+  background-color: whitesmoke;
+}
+.restaurants-home__title {
+  padding-bottom: 15px;
+}
+
+.card-list {
+  display: flex;
+  flex-flow: wrap column;
 }

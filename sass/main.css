@@ -192,11 +192,20 @@ h1, h2 {
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
 
-.desc-home__button {
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button-component {
   background: #9356dc;
   background: linear-gradient(352deg, #9356dc 0%, #ff79da 100%);
   border-radius: 40px;
@@ -208,6 +217,19 @@ p {
   font-weight: 500;
   cursor: pointer;
   margin: 5px;
+}
+
+.button-menu {
+  padding: 15px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .buttons-steps {
@@ -309,15 +331,32 @@ p {
   padding-bottom: 5px;
 }
 
-.card__where {
+.card__subtitle {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card__icon {
   position: absolute;
   right: 10%;
   bottom: 50%;
+}
+
+.card__menu {
+  position: relative;
+  padding: 15px;
+  margin: 15px 10px;
+  background-color: white;
+  border-radius: 20px 20px;
+  -webkit-box-shadow: 0px 1px 10px #e0e0e0;
+          box-shadow: 0px 1px 10px #e0e0e0;
+}
+
+.card__price {
+  position: absolute;
+  right: 10%;
+  bottom: 15px;
+  font-weight: bold;
 }
 
 .header-home {
@@ -334,6 +373,34 @@ p {
   width: 45%;
 }
 
+.page-footer {
+  background-color: rgba(0, 0, 0, 0.774);
+  color: white;
+  padding: 20px 10px;
+}
+
+.page-footer__img {
+  font-family: "Shrikhand", cursive;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list__item {
+  padding: 5px 0px;
+}
+
+.footer-list__icon1 {
+  padding-right: 12px;
+}
+
+.footer-list__icon2 {
+  padding-right: 8px;
+}
+
 .loc-home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +413,7 @@ p {
           justify-content: center;
   position: relative;
   background-color: #e9e9e9;
+  padding: 15px 0;
 }
 
 .loc-home__icon {
@@ -366,6 +434,10 @@ p {
 
 .desc-home__title {
   padding: 0 10px;
+}
+
+.desc-home__text {
+  padding: 15px 0;
 }
 
 .steps-home {
@@ -393,5 +465,52 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap column;
           flex-flow: wrap column;
+}
+
+.img-menu {
+  width: 100vw;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -40px;
+  background-color: whitesmoke;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__title {
+  padding: 40px 0 0 20px;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+.menu__icon {
+  position: relative;
+  padding: 40px 0 0 10px;
+  right: -75px;
+}
+
+.menu__steptitle {
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.menu__line {
+  height: 3px;
+  width: 50px;
+  margin-left: 20px;
+  background-color: #99E2D0;
 }
 /*# sourceMappingURL=main.css.map */

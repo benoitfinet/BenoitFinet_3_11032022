@@ -1,0 +1,37 @@
+.img-menu {
+    width: 100vw;
+}
+
+.menu {
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -40px;
+    background-color: $grey-primary;
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        padding: 40px 0 0 20px;
+        font-family: $font-secondary;
+        font-size: 28px;
+    }
+    &__icon {
+        position: relative;
+        padding: 40px 0 0 10px;
+        right: -75px;
+    }
+    &__steptitle {
+        padding-top: 30px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    &__line {
+        height: 3px;
+        width: 50px;
+        margin-left: 20px;
+        background-color: $colour-tertiary;
+    }
+}

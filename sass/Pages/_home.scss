@@ -4,6 +4,7 @@
     justify-content: center;
     position: relative;
     background-color: rgb(233, 233, 233);
+    padding: 15px 0;
     &__icon {
         position: absolute;
         left: 26%;
@@ -20,6 +21,9 @@
     text-align: center;
     &__title {
         padding: 0 10px;
+    }
+    &__text {
+        padding: 15px 0;
     }
 }
 

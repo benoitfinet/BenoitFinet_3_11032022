@@ -1,4 +1,4 @@
-.desc-home__button {
+.button-component {
     background: rgb(147,86,220);
     background: linear-gradient(352deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
     border-radius: 40px;
@@ -10,6 +10,13 @@
     font-weight: 500;
     cursor: pointer;
     margin: 5px;
+}
+
+.button-menu {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons-steps {
