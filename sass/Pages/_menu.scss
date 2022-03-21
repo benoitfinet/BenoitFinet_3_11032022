@@ -1,5 +1,11 @@
 .img-menu {
     width: 100vw;
+    @include tablette-only {
+        width: 100%;
+    }
+    @include desktop-only {
+        display: none;
+    }
 }
 
 .menu {
@@ -17,9 +23,9 @@
         font-size: 28px;
     }
     &__icon {
-        position: relative;
+        position: absolute;
         padding: 40px 0 0 10px;
-        right: -75px;
+        right: 25px;
     }
     &__steptitle {
         padding-top: 30px;
@@ -33,5 +39,45 @@
         width: 50px;
         margin-left: 20px;
         background-color: $colour-tertiary;
+    }
+    @include desktop-only {
+        width: 40%;
+        opacity: 0.9;
+        border-radius: 40px 40px;
+        margin: auto;
+        top: 25px;
+    }
+}
+
+.menu-page {
+    @include desktop-only {
+        padding-bottom: 2%;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.lapalettedugout {
+    @include desktop-only {
+        background-image: url("../../assets/restaurants/first-restaurant.jpg");
+    }
+}
+
+.lanoteenchantee {
+    @include desktop-only {
+        background-image: url("../../assets/restaurants/third-restaurant.jpg");
+    }
+}
+
+.alafrancaise {
+    @include desktop-only {
+        background-image: url("../../assets/restaurants/fourth-restaurant.jpg");
+    }
+}
+
+.ledelicedessens {
+    @include desktop-only {
+        background-image: url("../../assets/restaurants/second-restaurant.jpg");
     }
 }

@@ -13,10 +13,14 @@
 }
 
 .button-menu {
-    padding: 15px 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+    &__content{
+        padding: 15px 40px;
+        align-items: flex-end;
+        width: 200px;
+    }
 }
 
 .buttons-steps {
@@ -51,5 +55,11 @@
         position: absolute;
         left: 70px;
         font-weight: 700;
+    }
+    @include tablette-only {
+        width: 33%;
+        &__text{
+            padding: 10%;
+        }
     }
 }

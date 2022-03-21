@@ -24,10 +24,10 @@
         top: 7%;
         right: 5%;
         background-color: $colour-tertiary;
-        width: 20%;
         padding: 2%;
         font-weight: 700;
         color: #189276;
+        text-align: center;
     }
     &__bottom{
         position: relative;
@@ -49,8 +49,8 @@
     }
     &__menu {
         position: relative;
-        padding: 15px;
-        margin: 15px 10px;
+        padding: 2%;
+        margin: 4% 4%;
         background-color: white;
         border-radius: 20px 20px;
         box-shadow: 0px 1px 10px rgb(224, 224, 224);
@@ -60,5 +60,8 @@
         right: 10%;
         bottom: 15px;
         font-weight: bold;
+    }
+    @include desktop-only {
+        width: 45%;
     }
 }

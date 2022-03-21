@@ -1,9 +1,38 @@
-.header-home {
+.header {
     text-align: center;
     justify-content: center;
     padding: 20px 0px 12px 0px;
-    box-shadow: 0 4px 4px grey;
+    box-shadow: 0 2px 4px grey;
+    position: relative;
     &__img {
         width: 45%;
+    }
+    &__return{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        text-decoration: none;
+        color: black;
+    }
+    &__button{
+        display: none;
+    }
+    @include tablette-only {
+        &__img {
+            width: 20%;
+        }
+    }
+    @include desktop-only {
+        &__button {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            left: 3%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &__return{
+            display: none;
+        }
     }
 }

@@ -220,16 +220,21 @@ ul {
 }
 
 .button-menu {
-  padding: 15px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-menu__content {
+  padding: 15px 40px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 200px;
 }
 
 .buttons-steps {
@@ -282,6 +287,15 @@ ul {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .buttons-steps {
+    width: 33%;
+  }
+  .buttons-steps__text {
+    padding: 10%;
+  }
+}
+
 .card {
   width: 100%;
   background-color: white;
@@ -314,10 +328,10 @@ ul {
   top: 7%;
   right: 5%;
   background-color: #99E2D0;
-  width: 20%;
   padding: 2%;
   font-weight: 700;
   color: #189276;
+  text-align: center;
 }
 
 .card__bottom {
@@ -344,8 +358,8 @@ ul {
 
 .card__menu {
   position: relative;
-  padding: 15px;
-  margin: 15px 10px;
+  padding: 2%;
+  margin: 4% 4%;
   background-color: white;
   border-radius: 20px 20px;
   -webkit-box-shadow: 0px 1px 10px #e0e0e0;
@@ -359,18 +373,62 @@ ul {
   font-weight: bold;
 }
 
-.header-home {
+@media screen and (min-width: 992px) {
+  .card {
+    width: 45%;
+  }
+}
+
+.header {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0px 12px 0px;
-  -webkit-box-shadow: 0 4px 4px grey;
-          box-shadow: 0 4px 4px grey;
+  -webkit-box-shadow: 0 2px 4px grey;
+          box-shadow: 0 2px 4px grey;
+  position: relative;
 }
 
-.header-home__img {
+.header__img {
   width: 45%;
+}
+
+.header__return {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  text-decoration: none;
+  color: black;
+}
+
+.header__button {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__img {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 3%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .header__return {
+    display: none;
+  }
 }
 
 .page-footer {
@@ -411,14 +469,17 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   background-color: #e9e9e9;
   padding: 15px 0;
 }
 
+.loc-home__block {
+  position: relative;
+}
+
 .loc-home__icon {
   position: absolute;
-  left: 26%;
+  left: -30px;
 }
 
 .loc-home__text {
@@ -448,6 +509,14 @@ ul {
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .steps-home .buttons-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .restaurants-home {
   padding: 40px 15px;
   background-color: whitesmoke;
@@ -467,8 +536,30 @@ ul {
           flex-flow: wrap column;
 }
 
+@media screen and (min-width: 992px) {
+  .card-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+  }
+}
+
 .img-menu {
   width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .img-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-menu {
+    display: none;
+  }
 }
 
 .menu {
@@ -494,9 +585,9 @@ ul {
 }
 
 .menu__icon {
-  position: relative;
+  position: absolute;
   padding: 40px 0 0 10px;
-  right: -75px;
+  right: 25px;
 }
 
 .menu__steptitle {
@@ -512,5 +603,48 @@ ul {
   width: 50px;
   margin-left: 20px;
   background-color: #99E2D0;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    width: 40%;
+    opacity: 0.9;
+    border-radius: 40px 40px;
+    margin: auto;
+    top: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-page {
+    padding-bottom: 2%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lapalettedugout {
+    background-image: url("../../assets/restaurants/first-restaurant.jpg");
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lanoteenchantee {
+    background-image: url("../../assets/restaurants/third-restaurant.jpg");
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .alafrancaise {
+    background-image: url("../../assets/restaurants/fourth-restaurant.jpg");
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ledelicedessens {
+    background-image: url("../../assets/restaurants/second-restaurant.jpg");
+  }
 }
 /*# sourceMappingURL=main.css.map */
