@@ -1,3 +1,7 @@
+.home-page {
+    animation : loader 0ms $delay-loader both;
+}
+
 .loc-home {
     display: flex;
     align-items: center;
@@ -37,6 +41,7 @@
     @include tablette-only {
         .buttons-home {
             display: flex;
+            justify-content: space-evenly;
         }
     }
 }
@@ -52,6 +57,30 @@
 .card-list {
     display: flex;
     flex-flow: wrap column;
+    
+    &__content {
+        position: relative;
+        border-radius: 20px 20px;
+        margin: 15px auto;
+        box-shadow: 0px 1px 10px rgb(224, 224, 224);
+        width: 100%;
+        @include desktop-only {
+            width: 45%;
+        }
+    }
+    &__icon {
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        font-size: 24px;
+        &:hover {
+            font: var(--fa-font-solid);
+            font-size: 24px;
+            color: $colour-primary;
+            transition: 500ms;
+        }
+    }
+
     @include desktop-only {
         flex-flow: row wrap;
         width: 100%;

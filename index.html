@@ -13,10 +13,11 @@
     <title>Ohmyfood</title>
 </head>
 <body>
+    <div class="loader"></div>
     <header class="header">
         <img class="header__img" src="./assets/logo/ohmyfood.png" alt="Logo">
     </header>
-    <main>
+    <main class="home-page">
         <div class="loc-home">
             <div class="loc-home__block">
                 <i class="loc-home__icon fa-solid fa-location-dot"></i>
@@ -41,7 +42,7 @@
                     <i class="buttons-steps__icon fa-solid fa-list-ul"></i>
                     <p class="buttons-steps__text">Composez votre menu</p>
                 </div>
-                <div class="buttons-steps">
+                <div class="buttons-steps button-steps__colour">
                     <div class="buttons-steps__step">3</div>
                     <i class="buttons-steps__icon fa-solid fa-store"></i>
                     <p class="buttons-steps__text">Dégustez au restaurant</p>
@@ -51,48 +52,56 @@
         <section class="restaurants-home">
             <h2 class="restaurants-home__title">Restaurants</h2>
             <div class="card-list">
-                <a class="card" href="./lapalettedugout.html">
-                    <div class="card__top">
-                        <img class="card__img" src="./assets/restaurants/first-restaurant.jpg" alt="La palette du goût">
-                        <div class="card__tag">Nouveau</div>
-                    </div>
-                    <div class="card__bottom">
-                        <p class="card__title">La palette du goût</p>
-                        <p class="card__subtitle">Ménilmontant</p>
-                        <i class="card__icon fa-regular fa-heart fa-xl"></i>
-                    </div>
-                </a>
-                <a class="card" href="./lanoteenchantee.html">
-                    <div class="card__top">
-                        <img class="card__img" src="./assets/restaurants/third-restaurant.jpg" alt="La note enchantée">
-                        <div class="card__tag">Nouveau</div>
-                    </div>
-                    <div class="card__bottom">
-                        <p class="card__title">La note enchantée</p>
-                        <p class="card__subtitle">Charonne</p>
-                        <i class="card__icon fa-regular fa-heart fa-xl"></i>
-                    </div>
-                </a>
-                <a class="card" href="./alafrancaise.html">
-                    <div class="card__top">
-                        <img class="card__img" src="./assets/restaurants/fourth-restaurant.jpg" alt="À la française">
-                    </div>
-                    <div class="card__bottom">
-                        <p class="card__title">À la française</p>
-                        <p class="card__subtitle">Cité Rouge</p>
-                        <i class="card__icon fa-regular fa-heart fa-xl"></i>
-                    </div>
-                </a>
-                <a class="card" href="./ledelicedessens.html">
-                    <div class="card__top">
-                        <img class="card__img" src="./assets/restaurants/second-restaurant.jpg" alt="Le délice des sens">
-                    </div>
-                    <div class="card__bottom">
-                        <p class="card__title">Le délice des sens</p>
-                        <p class="card__subtitle">Folie-Méricourt</p>
-                        <i class="card__icon fa-regular fa-heart fa-xl"></i>
-                    </div>
-                </a>
+                <div class="card-list__content">
+                    <a class="card" href="./lapalettedugout.html">
+                        <div class="card__top">
+                            <img class="card__img" src="./assets/restaurants/first-restaurant.jpg" alt="La palette du goût">
+                            <div class="card__tag">Nouveau</div>
+                        </div>
+                        <div class="card__bottom">
+                            <p class="card__title">La palette du goût</p>
+                            <p class="card__subtitle">Ménilmontant</p>
+                        </div>
+                    </a>
+                    <i class="card-list__icon fa-regular fa-heart"></i>
+                </div>
+                <div class="card-list__content">
+                    <a class="card" href="./lanoteenchantee.html">
+                        <div class="card__top">
+                            <img class="card__img" src="./assets/restaurants/third-restaurant.jpg" alt="La note enchantée">
+                            <div class="card__tag">Nouveau</div>
+                        </div>
+                        <div class="card__bottom">
+                            <p class="card__title">La note enchantée</p>
+                            <p class="card__subtitle">Charonne</p>
+                        </div>
+                    </a>
+                    <i class="card-list__icon fa-regular fa-heart"></i>
+                </div>
+                <div class="card-list__content">
+                    <a class="card" href="./alafrancaise.html">
+                        <div class="card__top">
+                            <img class="card__img" src="./assets/restaurants/fourth-restaurant.jpg" alt="À la française">
+                        </div>
+                        <div class="card__bottom">
+                            <p class="card__title">À la française</p>
+                            <p class="card__subtitle">Cité Rouge</p>
+                        </div>
+                    </a>
+                    <i class="card-list__icon fa-regular fa-heart"></i>
+                </div>
+                <div class="card-list__content">
+                    <a class="card" href="./ledelicedessens.html">
+                        <div class="card__top">
+                            <img class="card__img" src="./assets/restaurants/second-restaurant.jpg" alt="Le délice des sens">
+                        </div>
+                        <div class="card__bottom">
+                            <p class="card__title">Le délice des sens</p>
+                            <p class="card__subtitle">Folie-Méricourt</p>
+                        </div>
+                    </a>
+                    <i class="card-list__icon fa-regular fa-heart"></i>
+                </div>
             </div>
         </section>
     </main>
@@ -102,7 +111,7 @@
             <li class="footer-list__item"><i class="footer-list__icon1 fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</li>
             <li class="footer-list__item"><i class="footer-list__icon2 fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
             <li class="footer-list__item">Mentions légales</li>
-            <li class="footer-list__item">Contact</li>
+            <a href="mailto:test@test.com"><li class="footer-list__item">Contact</li></a>
         </ul>
     </footer>
 </body>

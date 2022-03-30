@@ -15,7 +15,7 @@
 .button-menu {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    padding: 20px 0px 80px 0px;
     &__content{
         padding: 15px 40px;
         align-items: flex-end;
@@ -45,6 +45,9 @@
         align-items: center;
         justify-content: center;
     }
+    &__colour {
+        background-color: $colour-primary;
+    }
     &__icon{
         position: absolute;
         left: 30px;
@@ -58,6 +61,7 @@
     }
     @include tablette-only {
         width: 33%;
+        max-width: 350px;
         &__text{
             padding: 10%;
         }

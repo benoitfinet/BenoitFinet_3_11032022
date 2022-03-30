@@ -1,5 +1,6 @@
 .img-menu {
     width: 100vw;
+    animation : loader 0ms $delay-loader both;
     @include tablette-only {
         width: 100%;
     }
@@ -8,11 +9,32 @@
     }
 }
 
+.starters {
+    position: relative;
+    animation: animatemenu 2000ms 2000ms both;
+}
+
+.dishes {
+    position: relative;
+    animation: animatemenu 2000ms 2500ms both;
+}
+
+.desserts {
+    position: relative;
+    animation: animatemenu 2000ms 3000ms both;
+}
+
+@keyframes animatemenu { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
 .menu {
     border-radius: 40px 40px 0 0;
     position: relative;
-    top: -40px;
+    margin-top: -40px;
     background-color: $grey-primary;
+    animation : loader 0ms $delay-loader both;
     &__header {
         display: flex;
         align-items: center;
@@ -33,12 +55,17 @@
         font-weight: 300;
         padding-left: 20px;
         font-size: 20px;
-    }
-    &__line {
-        height: 3px;
-        width: 50px;
-        margin-left: 20px;
-        background-color: $colour-tertiary;
+        position: relative;
+        &::after {
+            content: "";
+            height: 3px;
+            width: 50px;
+            position: absolute;
+            bottom: -6px;
+            margin-left: 20px;
+            left: 0;
+            background-color: $colour-tertiary;
+        }
     }
     @include desktop-only {
         width: 40%;
@@ -55,6 +82,7 @@
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
+        animation : loader 0ms $delay-loader both;
     }
 }
 
