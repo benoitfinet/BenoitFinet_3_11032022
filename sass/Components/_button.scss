@@ -46,12 +46,15 @@
         justify-content: center;
     }
     &__colour {
-        background-color: $colour-primary;
+        background-color: #decdf1;
     }
     &__icon{
         position: absolute;
         left: 30px;
         color: #999;
+    }
+    &__iconcolored{
+        color: $colour-primary;
     }
 
     &__text{

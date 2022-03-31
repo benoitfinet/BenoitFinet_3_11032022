@@ -4,7 +4,6 @@
     padding: 20px 0px 12px 0px;
     box-shadow: 0 2px 4px grey;
     position: relative;
-    animation : loader 0ms $delay-loader both;
     &__img {
         width: 45%;
     }
@@ -17,6 +16,9 @@
     }
     &__button{
         display: none;
+    }
+    &__home {
+        animation : $delay-loader ease-in-out 0s loader forwards;
     }
     @include tablette-only {
         &__img {

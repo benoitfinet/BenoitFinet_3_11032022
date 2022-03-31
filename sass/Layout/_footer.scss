@@ -1,12 +1,14 @@
 .page-footer {
     background-color: rgba(0, 0, 0, 0.774);
     padding: 20px 10px;
-    animation : loader 0ms $delay-loader both;
     &__img{
         color: white;
         font-family: $font-secondary;
         padding: 10px 0;
         font-weight: 500;
+    }
+    &__home {
+        animation : $delay-loader ease-in-out 0s loader forwards;
     }
 }
 
@@ -14,7 +16,6 @@
     list-style-type: none;
     &__item {
         padding: 5px 0px;
-        text-decoration: none;
         color: white;
     }
     &__icon1 {

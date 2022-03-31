@@ -1,5 +1,6 @@
 .home-page {
-    animation : loader 0ms $delay-loader both;
+    opacity: 0;
+    animation : $delay-loader ease-in-out 0s loader forwards;
 }
 
 .loc-home {

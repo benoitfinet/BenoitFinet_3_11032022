@@ -42,7 +42,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        transition: transform 500ms ease-in-out;
+        &:hover {
+            animation: subtitle 500ms ease-in-out forwards;
+        }
     }
     &__menu {
         position: relative;
@@ -58,11 +60,16 @@
         &:hover .card__check--icon {
             transform: rotate(360deg);
         }
+        &:hover .card__price {
+            transform: translate(-70px, 0);
+        }
     }
     &__price {
         font-weight: bold;
         transition: transform 500ms ease-in-out;
         text-align: right;
+        position: absolute;
+        right: 25px;
     }
     &__check {
         position: absolute;
@@ -70,9 +77,9 @@
         justify-content: center;
         align-items: center;
         background-color: $colour-tertiary;
-        width: 18%;
+        width: 70px;
         height: 100%;
-        right: -18%;
+        right: -70px;
         bottom: 0;
         transition: transform 500ms ease-in-out;
         &--icon {
@@ -86,5 +93,23 @@
             height: 20px;
             transition: transform 500ms ease-in-out;
         }
+    }
+}
+
+@keyframes subtitle {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: calc(100% - 125px);
+    }
+}
+
+@keyframes subtitle2 {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: calc(100% - 125px);
     }
 }

@@ -11,26 +11,32 @@
     border-top: 16px solid $colour-secondary;
     animation: spin $delay-loader linear;
     opacity: 0;
+    position: fixed;
+    pointer-events: none;
 }
 
 @keyframes spin {
-0% { 
-    transform: rotate(0deg);
-    opacity: 1;
-}
-99%, 100% {
-    opacity: 0;
-}
-100% {
-    transform: rotate(360deg);
-}
+    0% { 
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
 }
 
 @keyframes loader{
-0% {
-    transform: translateX(-9999px);
-}
-100% {
-    transform: translateX(0);
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

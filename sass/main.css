@@ -205,6 +205,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button-component {
   background: #9356dc;
   background: linear-gradient(352deg, #9356dc 0%, #ff79da 100%);
@@ -276,13 +280,17 @@ ul {
 }
 
 .buttons-steps__colour {
-  background-color: #9356DC;
+  background-color: #decdf1;
 }
 
 .buttons-steps__icon {
   position: absolute;
   left: 30px;
   color: #999;
+}
+
+.buttons-steps__iconcolored {
+  color: #9356DC;
 }
 
 .buttons-steps__text {
@@ -312,9 +320,11 @@ ul {
   border: 16px solid #9356DC;
   border-radius: 50%;
   border-top: 16px solid #FF79DA;
-  -webkit-animation: spin 2000ms linear;
-          animation: spin 2000ms linear;
+  -webkit-animation: spin 1000ms linear;
+          animation: spin 1000ms linear;
   opacity: 0;
+  position: fixed;
+  pointer-events: none;
 }
 
 @-webkit-keyframes spin {
@@ -323,12 +333,13 @@ ul {
             transform: rotate(0deg);
     opacity: 1;
   }
-  99%, 100% {
-    opacity: 0;
+  80% {
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
@@ -338,34 +349,37 @@ ul {
             transform: rotate(0deg);
     opacity: 1;
   }
-  99%, 100% {
-    opacity: 0;
+  80% {
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes loader {
   0% {
-    -webkit-transform: translateX(-9999px);
-            transform: translateX(-9999px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes loader {
   0% {
-    -webkit-transform: translateX(-9999px);
-            transform: translateX(-9999px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -420,10 +434,11 @@ ul {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.card__subtitle:hover {
+  -webkit-animation: subtitle 500ms ease-in-out forwards;
+          animation: subtitle 500ms ease-in-out forwards;
 }
 
 .card__menu {
@@ -447,6 +462,11 @@ ul {
           transform: rotate(360deg);
 }
 
+.card__menu:hover .card__price {
+  -webkit-transform: translate(-70px, 0);
+          transform: translate(-70px, 0);
+}
+
 .card__price {
   font-weight: bold;
   -webkit-transition: -webkit-transform 500ms ease-in-out;
@@ -454,6 +474,8 @@ ul {
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   text-align: right;
+  position: absolute;
+  right: 25px;
 }
 
 .card__check {
@@ -468,9 +490,9 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: #99E2D0;
-  width: 18%;
+  width: 70px;
   height: 100%;
-  right: -18%;
+  right: -70px;
   bottom: 0;
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
@@ -499,6 +521,42 @@ ul {
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
+@-webkit-keyframes subtitle {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 125px);
+  }
+}
+
+@keyframes subtitle {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 125px);
+  }
+}
+
+@-webkit-keyframes subtitle2 {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 125px);
+  }
+}
+
+@keyframes subtitle2 {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 125px);
+  }
+}
+
 .header {
   text-align: center;
   -webkit-box-pack: center;
@@ -508,8 +566,6 @@ ul {
   -webkit-box-shadow: 0 2px 4px grey;
           box-shadow: 0 2px 4px grey;
   position: relative;
-  -webkit-animation: loader 0ms 2000ms both;
-          animation: loader 0ms 2000ms both;
 }
 
 .header__img {
@@ -526,6 +582,11 @@ ul {
 
 .header__button {
   display: none;
+}
+
+.header__home {
+  -webkit-animation: 1000ms ease-in-out 0s loader forwards;
+          animation: 1000ms ease-in-out 0s loader forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -556,8 +617,6 @@ ul {
 .page-footer {
   background-color: rgba(0, 0, 0, 0.774);
   padding: 20px 10px;
-  -webkit-animation: loader 0ms 2000ms both;
-          animation: loader 0ms 2000ms both;
 }
 
 .page-footer__img {
@@ -567,13 +626,17 @@ ul {
   font-weight: 500;
 }
 
+.page-footer__home {
+  -webkit-animation: 1000ms ease-in-out 0s loader forwards;
+          animation: 1000ms ease-in-out 0s loader forwards;
+}
+
 .footer-list {
   list-style-type: none;
 }
 
 .footer-list__item {
   padding: 5px 0px;
-  text-decoration: none;
   color: white;
 }
 
@@ -586,8 +649,9 @@ ul {
 }
 
 .home-page {
-  -webkit-animation: loader 0ms 2000ms both;
-          animation: loader 0ms 2000ms both;
+  opacity: 0;
+  -webkit-animation: 1000ms ease-in-out 0s loader forwards;
+          animation: 1000ms ease-in-out 0s loader forwards;
 }
 
 .loc-home {
@@ -712,8 +776,6 @@ ul {
 
 .img-menu {
   width: 100vw;
-  -webkit-animation: loader 0ms 2000ms both;
-          animation: loader 0ms 2000ms both;
 }
 
 @media screen and (min-width: 768px) {
@@ -730,20 +792,20 @@ ul {
 
 .starters {
   position: relative;
-  -webkit-animation: animatemenu 2000ms 2000ms both;
-          animation: animatemenu 2000ms 2000ms both;
+  -webkit-animation: animatemenu 500ms 1000ms both;
+          animation: animatemenu 500ms 1000ms both;
 }
 
 .dishes {
   position: relative;
-  -webkit-animation: animatemenu 2000ms 2500ms both;
-          animation: animatemenu 2000ms 2500ms both;
+  -webkit-animation: animatemenu 500ms 1500ms both;
+          animation: animatemenu 500ms 1500ms both;
 }
 
 .desserts {
   position: relative;
-  -webkit-animation: animatemenu 2000ms 3000ms both;
-          animation: animatemenu 2000ms 3000ms both;
+  -webkit-animation: animatemenu 500ms 2000ms both;
+          animation: animatemenu 500ms 2000ms both;
 }
 
 @-webkit-keyframes animatemenu {
@@ -773,8 +835,6 @@ ul {
   position: relative;
   margin-top: -40px;
   background-color: whitesmoke;
-  -webkit-animation: loader 0ms 2000ms both;
-          animation: loader 0ms 2000ms both;
 }
 
 .menu__header {
@@ -834,8 +894,6 @@ ul {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-animation: loader 0ms 2000ms both;
-            animation: loader 0ms 2000ms both;
   }
 }
 
