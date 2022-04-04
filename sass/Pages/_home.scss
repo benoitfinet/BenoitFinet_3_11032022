@@ -35,9 +35,12 @@
 }
 
 .steps-home {
-    padding: 40px 15px;
+    padding: 40px 20px;
     &__title {
         padding-bottom: 20px;
+        @include desktop-only {
+            padding-left: 2.5%;
+    }
     }
     @include tablette-only {
         .buttons-home {
@@ -45,13 +48,22 @@
             justify-content: space-evenly;
         }
     }
+    @include desktop-only {
+        .buttons-home {
+            padding-left: 2.5%;
+        }
+        
+    }
 }
 
 .restaurants-home {
-    padding: 40px 15px;
+    padding: 40px 20px;
     background-color: rgb(245, 245, 245);
     &__title {
         padding-bottom: 15px;
+        @include desktop-only {
+                padding-left: 2.5%;
+        }
     }
 }
 
