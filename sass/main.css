@@ -320,8 +320,8 @@ a {
   border: 16px solid #9356DC;
   border-radius: 50%;
   border-top: 16px solid #FF79DA;
-  -webkit-animation: spin 1000ms linear;
-          animation: spin 1000ms linear;
+  -webkit-animation: spin 2000ms linear;
+          animation: spin 2000ms linear;
   opacity: 0;
   position: fixed;
   pointer-events: none;
@@ -611,8 +611,8 @@ a {
 }
 
 .header__home {
-  -webkit-animation: 1000ms ease-in-out 0s loader forwards;
-          animation: 1000ms ease-in-out 0s loader forwards;
+  -webkit-animation: 2000ms ease-in-out 0s loader forwards;
+          animation: 2000ms ease-in-out 0s loader forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -659,8 +659,8 @@ a {
 }
 
 .page-footer__home {
-  -webkit-animation: 1000ms ease-in-out 0s loader forwards;
-          animation: 1000ms ease-in-out 0s loader forwards;
+  -webkit-animation: 2000ms ease-in-out 0s loader forwards;
+          animation: 2000ms ease-in-out 0s loader forwards;
 }
 
 .footer-list {
@@ -688,8 +688,8 @@ a {
 
 .home-page {
   opacity: 0;
-  -webkit-animation: 1000ms ease-in-out 0s loader forwards;
-          animation: 1000ms ease-in-out 0s loader forwards;
+  -webkit-animation: 2000ms ease-in-out 0s loader forwards;
+          animation: 2000ms ease-in-out 0s loader forwards;
 }
 
 .loc-home {
