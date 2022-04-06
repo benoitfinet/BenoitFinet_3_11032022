@@ -93,24 +93,24 @@
 
 .lapalettedugout {
     @include desktop-only {
-        background-image: url("../../assets/restaurants/first-restaurant.jpg");
+        background-image: url("../assets/restaurants/first-restaurant.jpg");
     }
 }
 
 .lanoteenchantee {
     @include desktop-only {
-        background-image: url("../../assets/restaurants/third-restaurant.jpg");
+        background-image: url("../assets/restaurants/third-restaurant.jpg");
     }
 }
 
 .alafrancaise {
     @include desktop-only {
-        background-image: url("../../assets/restaurants/fourth-restaurant.jpg");
+        background-image: url("../assets/restaurants/fourth-restaurant.jpg");
     }
 }
 
 .ledelicedessens {
     @include desktop-only {
-        background-image: url("../../assets/restaurants/second-restaurant.jpg");
+        background-image: url("../assets/restaurants/second-restaurant.jpg");
     }
 }

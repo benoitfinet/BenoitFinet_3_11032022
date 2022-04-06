@@ -966,25 +966,25 @@ a {
 
 @media screen and (min-width: 992px) {
   .lapalettedugout {
-    background-image: url("../../assets/restaurants/first-restaurant.jpg");
+    background-image: url("../assets/restaurants/first-restaurant.jpg");
   }
 }
 
 @media screen and (min-width: 992px) {
   .lanoteenchantee {
-    background-image: url("../../assets/restaurants/third-restaurant.jpg");
+    background-image: url("../assets/restaurants/third-restaurant.jpg");
   }
 }
 
 @media screen and (min-width: 992px) {
   .alafrancaise {
-    background-image: url("../../assets/restaurants/fourth-restaurant.jpg");
+    background-image: url("../assets/restaurants/fourth-restaurant.jpg");
   }
 }
 
 @media screen and (min-width: 992px) {
   .ledelicedessens {
-    background-image: url("../../assets/restaurants/second-restaurant.jpg");
+    background-image: url("../assets/restaurants/second-restaurant.jpg");
   }
 }
 /*# sourceMappingURL=main.css.map */
