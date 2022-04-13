@@ -45,9 +45,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        &:hover {
-            animation: subtitle 500ms ease-in-out forwards;
-        }
+        transition: ease-out .9s;
     }
     &__menu {
         position: relative;
@@ -71,6 +69,10 @@
             @include tablette-only {
                 font-size: 19px;
             }
+        }
+        &:hover .card__subtitle {
+            width: calc(100% - 125px);
+            transition: ease-out .5s;
         }
         & .card__subtitle {
             font-size: 14px;

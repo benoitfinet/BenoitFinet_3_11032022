@@ -440,11 +440,8 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-}
-
-.card__subtitle:hover {
-  -webkit-animation: subtitle 500ms ease-in-out forwards;
-          animation: subtitle 500ms ease-in-out forwards;
+  -webkit-transition: ease-out .9s;
+  transition: ease-out .9s;
 }
 
 .card__menu {
@@ -481,6 +478,12 @@ a {
   .card__menu .card__title {
     font-size: 19px;
   }
+}
+
+.card__menu:hover .card__subtitle {
+  width: calc(100% - 125px);
+  -webkit-transition: ease-out .5s;
+  transition: ease-out .5s;
 }
 
 .card__menu .card__subtitle {
