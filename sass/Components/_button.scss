@@ -10,6 +10,11 @@
     font-weight: 500;
     cursor: pointer;
     margin: 5px;
+    transition: filter 500ms, box-shadow 500ms, ease-in-out;
+    &:hover {
+        filter: brightness(1.2);
+        box-shadow: 5px 2px 2px rgb(167, 167, 167);
+    }
 }
 
 .button-menu {
