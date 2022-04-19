@@ -89,8 +89,12 @@
         &:hover {
             font: var(--fa-font-solid);
             font-size: 24px;
-            color: $colour-primary;
             transition: 500ms;
+            background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 70%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+           -webkit-text-fill-color:transparent;
         }
     }
 

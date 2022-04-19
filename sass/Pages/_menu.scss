@@ -47,6 +47,16 @@
         position: absolute;
         padding: 40px 0 0 10px;
         right: 25px;
+        &:hover {
+            font: var(--fa-font-solid);
+            font-size: 24px;
+            transition: 500ms;
+            background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 30%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+           -webkit-text-fill-color:transparent;
+        }
     }
     &__steptitle {
         padding-top: 30px;

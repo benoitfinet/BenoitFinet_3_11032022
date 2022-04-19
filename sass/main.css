@@ -227,13 +227,6 @@ a {
   transition: filter 500ms, box-shadow 500ms, ease-in-out, -webkit-filter 500ms, -webkit-box-shadow 500ms;
 }
 
-.button-component:hover {
-  -webkit-filter: brightness(1.2);
-          filter: brightness(1.2);
-  -webkit-box-shadow: 5px 2px 2px #a7a7a7;
-          box-shadow: 5px 2px 2px #a7a7a7;
-}
-
 .button-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +264,16 @@ a {
   padding: 35px;
 }
 
+.buttons-steps:hover {
+  background-color: #f8f2ff;
+  -webkit-box-shadow: 0px 6px 6px #e0e0e0;
+          box-shadow: 0px 6px 6px #e0e0e0;
+}
+
+.buttons-steps:hover .buttons-steps__iconcolored {
+  color: #9356DC;
+}
+
 .buttons-steps__step {
   position: absolute;
   background-color: #9356DC;
@@ -290,18 +293,10 @@ a {
           justify-content: center;
 }
 
-.buttons-steps__colour {
-  background-color: #decdf1;
-}
-
 .buttons-steps__icon {
   position: absolute;
   left: 30px;
   color: #999;
-}
-
-.buttons-steps__iconcolored {
-  color: #9356DC;
 }
 
 .buttons-steps__text {
@@ -834,9 +829,13 @@ a {
 .card-list__icon:hover {
   font: var(--fa-font-solid);
   font-size: 24px;
-  color: #9356DC;
   -webkit-transition: 500ms;
   transition: 500ms;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(70%, #9356dc));
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: 992px) {
@@ -932,6 +931,18 @@ a {
   position: absolute;
   padding: 40px 0 0 10px;
   right: 25px;
+}
+
+.menu__icon:hover {
+  font: var(--fa-font-solid);
+  font-size: 24px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), color-stop(30%, #9356dc));
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 30%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__steptitle {

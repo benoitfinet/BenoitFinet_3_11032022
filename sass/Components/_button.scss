@@ -11,10 +11,6 @@
     cursor: pointer;
     margin: 5px;
     transition: filter 500ms, box-shadow 500ms, ease-in-out;
-    &:hover {
-        filter: brightness(1.2);
-        box-shadow: 5px 2px 2px rgb(167, 167, 167);
-    }
 }
 
 .button-menu {
@@ -38,6 +34,14 @@
     border-radius: 20px;
     margin: 15px;
     padding: 35px;
+    &:hover {
+        background-color: #f8f2ff;
+        box-shadow: 0px 6px 6px rgb(224, 224, 224);
+        .buttons-steps__iconcolored {
+            color: $colour-primary;
+        }
+    }
+    
     &__step{
         position: absolute;
         background-color: $colour-primary;
@@ -50,16 +54,10 @@
         align-items: center;
         justify-content: center;
     }
-    &__colour {
-        background-color: #decdf1;
-    }
     &__icon{
         position: absolute;
         left: 30px;
         color: #999;
-    }
-    &__iconcolored{
-        color: $colour-primary;
     }
 
     &__text{
